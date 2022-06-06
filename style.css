@@ -2,14 +2,39 @@ html,
 body {
   padding: 0;
   font-family: sans-serif;
-  max-width: 800px;
-  margin: auto;
+  max-width: 1000px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #efeeff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#efeeff), to(#d6f8ff));
+  background: linear-gradient(0deg, #efeeff 0%, #d6f8ff 100%);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 20px 0px;
+  margin: 0;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
 }
 
 .title {
   margin: 0;
-  margin-top: 100px;
+  margin-top: 30px;
   text-align: center;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
 }
 
 .title h1 {
@@ -23,8 +48,8 @@ body {
 .tree {
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.121);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.121);
-  margin: 10px 0px;
-  width: 90%;
+  margin: 10px 10px;
+  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,8 +105,8 @@ body {
 }
 
 .tree .mainpart .text strong {
-  -webkit-transform: translateX(10px) translateY(-10);
-          transform: translateX(10px) translateY(-10);
+  -webkit-transform: translateX(10px) translateY();
+          transform: translateX(10px) translateY();
   margin: 0 10px;
   padding: 10px;
   border-radius: 10px;
@@ -197,5 +222,107 @@ body {
 
 #nubb .wrapper .button {
   color: #0099ff;
+}
+
+#plumania {
+  background-color: rgba(230, 230, 250, 0.563);
+  border-color: lavender;
+}
+
+#plumania img {
+  border-color: lavender;
+}
+
+#plumania .mainpart div strong {
+  background-color: lavender;
+}
+
+#plumania .wrapper .button {
+  color: lavender;
+}
+
+#juxive {
+  background-color: #71007193;
+  border-color: #710071;
+}
+
+#juxive img {
+  border-color: #710071;
+}
+
+#juxive .mainpart div strong {
+  background-color: #710071;
+}
+
+#juxive .wrapper .button {
+  color: #710071;
+}
+
+#daxie {
+  background-color: rgba(212, 0, 212, 0.644);
+  border-color: #d400d4;
+}
+
+#daxie img {
+  border-color: #d400d4;
+}
+
+#daxie .mainpart div strong {
+  background-color: #d400d4;
+}
+
+#daxie .wrapper .button {
+  color: #d400d4;
+}
+
+#nate {
+  background-color: rgba(0, 0, 0, 0.559);
+  border-color: black;
+}
+
+#nate img {
+  border-color: black;
+}
+
+#nate .mainpart div strong {
+  background-color: black;
+}
+
+#nate .wrapper .button {
+  color: black;
+}
+
+#deletez {
+  background-color: rgba(255, 0, 0, 0.566);
+  border-color: red;
+}
+
+#deletez img {
+  border-color: red;
+}
+
+#deletez .mainpart div strong {
+  background-color: red;
+}
+
+#deletez .wrapper .button {
+  color: red;
+}
+
+#salman {
+  background-color: rgba(0, 0, 139, 0.632);
+  border-color: darkblue;
+}
+
+#salman img {
+  border-color: darkblue;
+}
+
+#salman .mainpart div strong {
+  background-color: darkblue;
+}
+
+#salman .wrapper .button {
+  color: darkblue;
 }
 /*# sourceMappingURL=style.css.map */

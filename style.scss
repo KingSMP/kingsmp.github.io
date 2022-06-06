@@ -2,14 +2,29 @@ html,
 body {
     padding: 0;
     font-family: sans-serif;
-    max-width: 800px;
-    margin: auto;
+    max-width: 1000px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgb(239, 238, 255);
+    background: linear-gradient(0deg, rgba(239, 238, 255, 1) 0%, rgba(214, 248, 255, 1) 100%);
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0px;
+    margin: 0;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
 }
 
 .title {
     margin: 0;
-    margin-top: 100px;
+    margin-top: 30px;
     text-align: center;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
     h1 {
         margin: 0;
     }
@@ -20,8 +35,8 @@ body {
 
 .tree {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.121);
-    margin: 10px 0px;
-    width: 90%;
+    margin: 10px 10px;
+    width: 400px;
     display: flex;
     flex-direction: row;
     height: 120px;
@@ -51,7 +66,7 @@ body {
                 text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
             }
             strong {
-                transform: translateX(10px) translateY(-10);
+                transform: translateX(10px) translateY();
                 margin: 0 10px;
                 padding: 10px;
                 border-radius: 10px;
@@ -159,5 +174,113 @@ body {
     }
     .wrapper .button {
         color: rgb(0, 153, 255);
+    }
+}
+
+#plumania {
+    background-color: rgba(230, 230, 250, 0.563);
+    border-color: lavender;
+    img {
+        border-color: lavender;
+    }
+    .mainpart {
+        div {
+            strong {
+                background-color: lavender;
+            }
+        }
+    }
+    .wrapper .button {
+        color: lavender;
+    }
+}
+
+#juxive {
+    background-color: #71007193;
+    border-color: #710071;
+    img {
+        border-color: #710071;
+    }
+    .mainpart {
+        div {
+            strong {
+                background-color: #710071;
+            }
+        }
+    }
+    .wrapper .button {
+        color: #710071;
+    }
+}
+
+#daxie {
+    background-color: rgba(212, 0, 212, 0.644);
+    border-color: rgb(212, 0, 212);
+    img {
+        border-color: rgb(212, 0, 212);
+    }
+    .mainpart {
+        div {
+            strong {
+                background-color: rgb(212, 0, 212);
+            }
+        }
+    }
+    .wrapper .button {
+        color: rgb(212, 0, 212);
+    }
+}
+
+#nate {
+    background-color: rgba(0, 0, 0, 0.559);
+    border-color: black;
+    img {
+        border-color: black;
+    }
+    .mainpart {
+        div {
+            strong {
+                background-color: black;
+            }
+        }
+    }
+    .wrapper .button {
+        color: black;
+    }
+}
+
+#deletez {
+    background-color: rgba(255, 0, 0, 0.566);
+    border-color: red;
+    img {
+        border-color: red;
+    }
+    .mainpart {
+        div {
+            strong {
+                background-color: red;
+            }
+        }
+    }
+    .wrapper .button {
+        color: red;
+    }
+}
+
+#salman {
+    background-color: rgba(0, 0, 139, 0.632);
+    border-color: darkblue;
+    img {
+        border-color: darkblue;
+    }
+    .mainpart {
+        div {
+            strong {
+                background-color: darkblue;
+            }
+        }
+    }
+    .wrapper .button {
+        color: darkblue;
     }
 }
