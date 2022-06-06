@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   font-family: sans-serif;
-  max-width: 500px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -21,22 +21,19 @@ body {
 }
 
 .tree {
-  margin: 10px;
-  width: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.121);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.121);
+  margin: 10px 0px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   height: 120px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 100px;
+  border-radius: 20px;
   border: 5px solid;
 }
 
@@ -45,36 +42,127 @@ body {
   height: 100px;
   border-radius: 100%;
   border: 3px solid;
-  margin-left: 10px;
+  margin: 6px;
 }
 
 .tree .mainpart {
   margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .tree .mainpart .text {
   text-align: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 0;
 }
 
-.tree .mainpart .text h1 {
+.tree .mainpart .text h2 {
   margin: 0;
+  color: white;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
 }
 
 .tree .mainpart .text strong {
-  margin: 0 20px;
+  -webkit-transform: translateX(10px) translateY(-10);
+          transform: translateX(10px) translateY(-10);
+  margin: 0 10px;
   padding: 10px;
   border-radius: 10px;
   color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.tree .mainpart .wrapper {
+  margin-top: 0px;
+}
+
+.tree .mainpart .wrapper .button {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.359);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.359);
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tree .mainpart .wrapper .button .icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 33px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  left: -5px;
+}
+
+.tree .mainpart .wrapper .button .icon i {
+  font-size: 10px;
+}
+
+.tree .mainpart .wrapper .button span {
+  position: relative;
+  font-size: 10px;
+  font-weight: 500;
+  top: -3px;
+  margin-left: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tree .mainpart .wrapper .button:nth-child(1) span {
+  color: red;
+}
+
+.tree .mainpart .wrapper .button:nth-child(2) span {
+  color: purple;
+}
+
+.tree .mainpart .wrapper .button:nth-child(1):hover .icon {
+  background-color: red;
+  color: white;
+}
+
+.tree .mainpart .wrapper .button:nth-child(2):hover .icon {
+  background-color: purple;
+  color: white;
+}
+
+.tree .mainpart .wrapper .button:hover {
+  width: 85px;
 }
 
 #basic {
@@ -86,7 +174,28 @@ body {
   border-color: gold;
 }
 
-#basic div div strong {
+#basic .mainpart div strong {
   background-color: gold;
+}
+
+#basic .wrapper .button {
+  color: gold;
+}
+
+#nubb {
+  background-color: rgba(0, 153, 255, 0.659);
+  border-color: #0099ff;
+}
+
+#nubb img {
+  border-color: #0099ff;
+}
+
+#nubb .mainpart div strong {
+  background-color: #0099ff;
+}
+
+#nubb .wrapper .button {
+  color: #0099ff;
 }
 /*# sourceMappingURL=style.css.map */
