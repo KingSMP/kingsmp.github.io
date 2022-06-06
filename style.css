@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   max-width: 1000px;
-  margin: 0;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,8 +31,7 @@ footer {
 }
 
 .title {
-  margin: 0;
-  margin-top: 30px;
+  margin: 50px 0px;
   text-align: center;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
 }
@@ -43,9 +42,19 @@ footer {
 
 .title p {
   margin: 0;
+  padding: 10px;
 }
 
-.tree {
+table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+table .tree {
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.121);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.121);
   margin: 10px 10px;
@@ -62,7 +71,7 @@ footer {
   border: 5px solid;
 }
 
-.tree img {
+table .tree img {
   width: 100px;
   height: 100px;
   border-radius: 100%;
@@ -70,7 +79,7 @@ footer {
   margin: 6px;
 }
 
-.tree .mainpart {
+table .tree .mainpart {
   margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,7 +93,7 @@ footer {
           flex-direction: column;
 }
 
-.tree .mainpart .text {
+table .tree .mainpart .text {
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,13 +107,13 @@ footer {
   margin-top: 0;
 }
 
-.tree .mainpart .text h2 {
+table .tree .mainpart .text h2 {
   margin: 0;
   color: white;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
 }
 
-.tree .mainpart .text strong {
+table .tree .mainpart .text strong {
   -webkit-transform: translateX(10px) translateY();
           transform: translateX(10px) translateY();
   margin: 0 10px;
@@ -117,11 +126,11 @@ footer {
           user-select: none;
 }
 
-.tree .mainpart .wrapper {
+table .tree .mainpart .wrapper {
   margin-top: 0px;
 }
 
-.tree .mainpart .wrapper .button {
+table .tree .mainpart .wrapper .button {
   display: inline-block;
   height: 30px;
   width: 30px;
@@ -140,7 +149,7 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-.tree .mainpart .wrapper .button .icon {
+table .tree .mainpart .wrapper .button .icon {
   display: inline-block;
   height: 30px;
   width: 30px;
@@ -154,11 +163,11 @@ footer {
   left: -5px;
 }
 
-.tree .mainpart .wrapper .button .icon i {
+table .tree .mainpart .wrapper .button .icon i {
   font-size: 10px;
 }
 
-.tree .mainpart .wrapper .button span {
+table .tree .mainpart .wrapper .button span {
   position: relative;
   font-size: 10px;
   font-weight: 500;
@@ -168,26 +177,60 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-.tree .mainpart .wrapper .button:nth-child(1) span {
+table .tree .mainpart .wrapper .button:nth-child(1) span {
   color: red;
 }
 
-.tree .mainpart .wrapper .button:nth-child(2) span {
+table .tree .mainpart .wrapper .button:nth-child(2) span {
   color: purple;
 }
 
-.tree .mainpart .wrapper .button:nth-child(1):hover .icon {
+table .tree .mainpart .wrapper .button:nth-child(1):hover .icon {
   background-color: red;
   color: white;
 }
 
-.tree .mainpart .wrapper .button:nth-child(2):hover .icon {
+table .tree .mainpart .wrapper .button:nth-child(2):hover .icon {
   background-color: purple;
   color: white;
 }
 
-.tree .mainpart .wrapper .button:hover {
+table .tree .mainpart .wrapper .button:hover {
   width: 85px;
+}
+
+@media screen and (max-width: 870px) {
+  table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  table tr th {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  table tr th .tree {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 
 #basic {
@@ -324,5 +367,73 @@ footer {
 
 #salman .wrapper .button {
   color: darkblue;
+}
+
+#mules {
+  background-color: rgba(255, 192, 203, 0.624);
+  border-color: pink;
+}
+
+#mules img {
+  border-color: pink;
+}
+
+#mules .mainpart div strong {
+  background-color: pink;
+}
+
+#mules .wrapper .button {
+  color: pink;
+}
+
+#fishey {
+  background-color: rgba(0, 128, 128, 0.564);
+  border-color: teal;
+}
+
+#fishey img {
+  border-color: teal;
+}
+
+#fishey .mainpart div strong {
+  background-color: teal;
+}
+
+#fishey .wrapper .button {
+  color: teal;
+}
+
+#remmbuu {
+  background-color: rgba(255, 221, 227, 0.539);
+  border-color: #ffdde3;
+}
+
+#remmbuu img {
+  border-color: #ffdde3;
+}
+
+#remmbuu .mainpart div strong {
+  background-color: #ffdde3;
+}
+
+#remmbuu .wrapper .button {
+  color: #ffdde3;
+}
+
+#ariduck {
+  background-color: #f6bd0092;
+  border-color: #F6BE00;
+}
+
+#ariduck img {
+  border-color: #F6BE00;
+}
+
+#ariduck .mainpart div strong {
+  background-color: #F6BE00;
+}
+
+#ariduck .wrapper .button {
+  color: #F6BE00;
 }
 /*# sourceMappingURL=style.css.map */
