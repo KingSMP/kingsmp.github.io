@@ -2,10 +2,10 @@ html,
 body {
     padding: 0;
     font-family: sans-serif;
-    max-width: 1000px;
     margin: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background: rgb(239, 238, 255);
     background: linear-gradient(0deg, rgba(239, 238, 255, 1) 0%, rgba(214, 248, 255, 1) 100%);
 }
@@ -16,6 +16,14 @@ footer {
     justify-content: center;
     width: 100%;
     padding: 20px 0px;
+    margin: 0;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
+}
+
+.formlink {
+    color: black;
+    text-align: center;
+    font-weight: 800;
     margin: 0;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
 }
@@ -158,6 +166,27 @@ table {
                 .tree {
                     width: 100%;
                     margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    table {
+        display: flex;
+        flex-direction: column;
+        tr {
+            display: flex;
+            flex-direction: column;
+            th {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                .tree {
+                    width: 100%;
+                    height: 50%;
+                    margin: 10px 10px;
                 }
             }
         }
@@ -377,5 +406,23 @@ table {
     }
     .wrapper .button {
         color: #F6BE00;
+    }
+}
+
+#ascent {
+    background-color: rgba(255, 166, 0, 0.635);
+    border-color: orange;
+    img {
+        border-color: orange;
+    }
+    .mainpart {
+        div {
+            strong {
+                background-color: orange;
+            }
+        }
+    }
+    .wrapper .button {
+        color: orange;
     }
 }
