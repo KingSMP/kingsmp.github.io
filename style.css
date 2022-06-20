@@ -3,29 +3,17 @@ body {
   padding: 0;
   font-family: sans-serif;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #efeeff;
-  background: -webkit-gradient(linear, left bottom, left top, from(#efeeff), to(#d6f8ff));
-  background: linear-gradient(0deg, #efeeff 0%, #d6f8ff 100%);
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(239, 238, 255);
+  background: linear-gradient(0deg, rgb(239, 238, 255) 0%, rgb(214, 248, 255) 100%);
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 100%;
   padding: 20px 0px;
   margin: 0;
@@ -45,42 +33,28 @@ footer {
   text-align: center;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
 }
-
 .title h1 {
   margin: 0;
 }
-
 .title p {
   margin: 0;
   padding: 10px;
 }
 
 table {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 table .tree {
-  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.121);
-          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.121);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.121);
   margin: 10px 10px;
   width: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   height: 120px;
   border-radius: 20px;
   border: 5px solid;
 }
-
 table .tree img {
   width: 100px;
   height: 100px;
@@ -88,44 +62,26 @@ table .tree img {
   border: 3px solid;
   margin: 6px;
 }
-
 table .tree .mainpart {
   margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
-
 table .tree .mainpart .text {
   text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-top: 0;
 }
-
 table .tree .mainpart .text h2 {
   margin: 0;
   color: white;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.192);
 }
-
 table .tree .mainpart .text strong {
-  -webkit-transform: translateX(10px) translateY();
-          transform: translateX(10px) translateY();
+  transform: translateX(10px) translateY();
   margin: 0 10px;
   padding: 10px;
   border-radius: 10px;
@@ -135,11 +91,9 @@ table .tree .mainpart .text strong {
       -ms-user-select: none;
           user-select: none;
 }
-
 table .tree .mainpart .wrapper {
   margin-top: 0px;
 }
-
 table .tree .mainpart .wrapper .button {
   display: inline-block;
   height: 30px;
@@ -147,129 +101,83 @@ table .tree .mainpart .wrapper .button {
   float: left;
   margin: 0 5px;
   overflow: hidden;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 50px;
-  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.359);
-          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.359);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.359);
   text-decoration: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.3s ease-in-out;
+  align-items: center;
   transition: all 0.3s ease-in-out;
 }
-
 table .tree .mainpart .wrapper .button .icon {
   display: inline-block;
   height: 30px;
   width: 30px;
   text-align: center;
   border-radius: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   line-height: 33px;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   left: -5px;
 }
-
 table .tree .mainpart .wrapper .button .icon i {
   font-size: 10px;
 }
-
 table .tree .mainpart .wrapper .button span {
   position: relative;
   font-size: 10px;
   font-weight: 500;
   top: -3px;
   margin-left: 1px;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 table .tree .mainpart .wrapper .button:nth-child(1) span {
   color: red;
 }
-
 table .tree .mainpart .wrapper .button:nth-child(2) span {
   color: purple;
 }
-
 table .tree .mainpart .wrapper .button:nth-child(1):hover .icon {
   background-color: red;
   color: white;
 }
-
 table .tree .mainpart .wrapper .button:nth-child(2):hover .icon {
   background-color: purple;
   color: white;
 }
-
 table .tree .mainpart .wrapper .button:hover {
   width: 85px;
 }
 
 @media screen and (max-width: 870px) {
   table {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   table tr {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   table tr th {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   table tr th .tree {
     width: 100%;
     margin-left: 0px;
   }
 }
-
 @media screen and (max-width: 430px) {
   table {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   table tr {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   table tr th {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 90%;
   }
   table tr th .tree {
@@ -278,105 +186,86 @@ table .tree .mainpart .wrapper .button:hover {
     margin: 10px 10px;
   }
 }
-
 #basic {
   background-color: rgba(255, 217, 0, 0.572);
   border-color: gold;
 }
-
 #basic img {
   border-color: gold;
 }
-
 #basic .mainpart div strong {
   background-color: gold;
 }
-
 #basic .wrapper .button {
   color: gold;
 }
 
 #nubb {
   background-color: rgba(0, 153, 255, 0.659);
-  border-color: #0099ff;
+  border-color: rgb(0, 153, 255);
 }
-
 #nubb img {
-  border-color: #0099ff;
+  border-color: rgb(0, 153, 255);
 }
-
 #nubb .mainpart div strong {
-  background-color: #0099ff;
+  background-color: rgb(0, 153, 255);
 }
-
 #nubb .wrapper .button {
-  color: #0099ff;
+  color: rgb(0, 153, 255);
 }
 
 #plumania {
   background-color: rgba(230, 230, 250, 0.563);
   border-color: lavender;
 }
-
 #plumania img {
   border-color: lavender;
 }
-
 #plumania .mainpart div strong {
   background-color: lavender;
 }
-
 #plumania .wrapper .button {
   color: lavender;
 }
 
 #juxive {
-  background-color: #71007193;
+  background-color: rgba(113, 0, 113, 0.5764705882);
   border-color: #710071;
 }
-
 #juxive img {
   border-color: #710071;
 }
-
 #juxive .mainpart div strong {
   background-color: #710071;
 }
-
 #juxive .wrapper .button {
   color: #710071;
 }
 
 #daxie {
   background-color: rgba(212, 0, 212, 0.644);
-  border-color: #d400d4;
+  border-color: rgb(212, 0, 212);
 }
-
 #daxie img {
-  border-color: #d400d4;
+  border-color: rgb(212, 0, 212);
 }
-
 #daxie .mainpart div strong {
-  background-color: #d400d4;
+  background-color: rgb(212, 0, 212);
 }
-
 #daxie .wrapper .button {
-  color: #d400d4;
+  color: rgb(212, 0, 212);
 }
 
 #nate {
   background-color: rgba(0, 0, 0, 0.559);
   border-color: black;
 }
-
 #nate img {
   border-color: black;
 }
-
 #nate .mainpart div strong {
   background-color: black;
 }
-
 #nate .wrapper .button {
   color: black;
 }
@@ -385,15 +274,12 @@ table .tree .mainpart .wrapper .button:hover {
   background-color: rgba(255, 0, 0, 0.566);
   border-color: red;
 }
-
 #deletez img {
   border-color: red;
 }
-
 #deletez .mainpart div strong {
   background-color: red;
 }
-
 #deletez .wrapper .button {
   color: red;
 }
@@ -402,15 +288,12 @@ table .tree .mainpart .wrapper .button:hover {
   background-color: rgba(0, 0, 139, 0.632);
   border-color: darkblue;
 }
-
 #salman img {
   border-color: darkblue;
 }
-
 #salman .mainpart div strong {
   background-color: darkblue;
 }
-
 #salman .wrapper .button {
   color: darkblue;
 }
@@ -419,15 +302,12 @@ table .tree .mainpart .wrapper .button:hover {
   background-color: rgba(255, 192, 203, 0.624);
   border-color: pink;
 }
-
 #mules img {
   border-color: pink;
 }
-
 #mules .mainpart div strong {
   background-color: pink;
 }
-
 #mules .wrapper .button {
   color: pink;
 }
@@ -436,49 +316,40 @@ table .tree .mainpart .wrapper .button:hover {
   background-color: rgba(0, 128, 128, 0.564);
   border-color: teal;
 }
-
 #fishey img {
   border-color: teal;
 }
-
 #fishey .mainpart div strong {
   background-color: teal;
 }
-
 #fishey .wrapper .button {
   color: teal;
 }
 
 #remmbuu {
   background-color: rgba(255, 221, 227, 0.539);
-  border-color: #ffdde3;
+  border-color: rgb(255, 221, 227);
 }
-
 #remmbuu img {
-  border-color: #ffdde3;
+  border-color: rgb(255, 221, 227);
 }
-
 #remmbuu .mainpart div strong {
-  background-color: #ffdde3;
+  background-color: rgb(255, 221, 227);
 }
-
 #remmbuu .wrapper .button {
-  color: #ffdde3;
+  color: rgb(255, 221, 227);
 }
 
 #ariduck {
-  background-color: #f6bd0092;
+  background-color: rgba(246, 189, 0, 0.5725490196);
   border-color: #F6BE00;
 }
-
 #ariduck img {
   border-color: #F6BE00;
 }
-
 #ariduck .mainpart div strong {
   background-color: #F6BE00;
 }
-
 #ariduck .wrapper .button {
   color: #F6BE00;
 }
@@ -487,16 +358,26 @@ table .tree .mainpart .wrapper .button:hover {
   background-color: rgba(255, 166, 0, 0.635);
   border-color: orange;
 }
-
 #ascent img {
   border-color: orange;
 }
-
 #ascent .mainpart div strong {
   background-color: orange;
 }
-
 #ascent .wrapper .button {
   color: orange;
 }
-/*# sourceMappingURL=style.css.map */
+
+#nathan {
+  background-color: rgba(81, 200, 255, 0.5294117647);
+  border-color: #51c8ff;
+}
+#nathan img {
+  border-color: #51c8ff;
+}
+#nathan .mainpart div strong {
+  background-color: #51c8ff;
+}
+#nathan .wrapper .button {
+  color: #51c8ff;
+}/*# sourceMappingURL=style.css.map */
