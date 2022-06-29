@@ -380,4 +380,18 @@ table .tree .mainpart .wrapper .button:hover {
 }
 #nathan .wrapper .button {
   color: #51c8ff;
+}
+
+#moon {
+  background-color: rgba(151, 194, 193, 0.5529411765);
+  border-color: #97c2c1;
+}
+#moon img {
+  border-color: #97c2c1;
+}
+#moon .mainpart div strong {
+  background-color: #97c2c1;
+}
+#moon .wrapper .button {
+  color: #97c2c1;
 }/*# sourceMappingURL=style.css.map */
